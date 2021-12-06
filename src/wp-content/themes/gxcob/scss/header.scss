@@ -1,9 +1,5 @@
 header{
-	padding: 0 0 10px;
 	position: relative;
-	-webkit-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
-	-moz-box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
-	box-shadow: 0px 5px 5px 0px rgba(0,0,0,0.15);
 	.top{
 		background-color: $primarycolor;
 	}
@@ -40,4 +36,33 @@ header{
 			}
 		}
 	}
+    .navbar-area{
+        .navbar{
+            .sub-menu-bar{
+                .navbar-nav{
+                    .nav-item{
+                        a{
+                            &.active{
+                                color: #52CCA7;
+                            }
+                            &:hover{
+                                color: #52CCA7;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &.sticky{
+            .navbar{
+                box-shadow: 0 0 10px rgb(34 34 34 / 50%);
+            }
+        }
+    }
+    // a.active,
+    // .navbar-nav
+    // .nav-item
+    // .sub-menu
+    // li
+    // a:hover
 }

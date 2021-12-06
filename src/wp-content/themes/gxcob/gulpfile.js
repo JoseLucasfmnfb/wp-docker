@@ -1,6 +1,7 @@
 // Gravamos as dependencias do gulp em variaveis
 const gulp      = require('gulp');             // Pacote do gulp
-const sass      = require('gulp-sass');        // Pacote do compilador do sass para o Gulp
+//const sass      = require('gulp-sass');        // Pacote do compilador do sass para o Gulp
+const sass      = require('gulp-sass')(require('sass'));
 const minifyCSS = require('gulp-csso');        // Pacote do minificador de css para o Gulp
 const concat    = require('gulp-concat');      // Pacote para concatenar arquivos com o Gulp
 const uglify    = require('gulp-uglify');      // Pacote para "enfeiar" o código e deixar ilegivel

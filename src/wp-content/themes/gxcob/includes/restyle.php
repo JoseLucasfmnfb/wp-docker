@@ -19,7 +19,7 @@
         $current_user_ = wp_get_current_user();
         remove_menu_page( 'edit-comments.php' );
         remove_menu_page( 'edit.php' );
-        if ($current_user_->user_login != 'site') {
+        if ($current_user_->user_login != 'gxcob') {
             remove_menu_page( 'plugins.php' );
             remove_menu_page('edit.php?post_type=page');
             remove_submenu_page( 'index.php', 'update-core.php' );

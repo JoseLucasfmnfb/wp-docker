@@ -80,6 +80,11 @@ select{
 		color: $secondaryfontcolor;
 	}
 }
+.theme-btn{
+    &:hover{
+        background-color: #52cca7;
+    }
+}
 .obrigatorio{
 	margin: -10px 0 10px;
     color: $requiredcolor;

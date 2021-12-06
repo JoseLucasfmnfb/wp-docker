@@ -2,6 +2,7 @@
 	get_header();
 	echo "<main>";
 	get_template_part('templates/content-banner');
+	get_template_part('templates/content-recursos');
 	get_template_part('templates/content-sobre');
 	get_template_part('templates/content-blog');
 	get_template_part('templates/content-contato');

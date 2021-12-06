@@ -4,8 +4,14 @@
 	<?php wp_head(); ?>
 	<meta charset="utf-8">
 	<?php the_css_config(); ?>
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/bootstrap-5.0.0-alpha-1.min.css">
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/LineIcons.2.0.css">
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/animate.css">
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/glightbox.min.css">
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/tiny-slider.css">
+    <link rel="stylesheet" href="<?php echo WP_TEMPLATE ?>/assets/css/main.css">
 	<link rel="stylesheet" type="text/css" href="<?php echo WP_TEMPLATE ?>/style.css">
-	<link rel="shortcut icon" type="image/png" href="<?php echo WP_TEMPLATE ?>/image/favicon.png">
+	<link rel="shortcut icon" type="image/png" href="<?php echo WP_TEMPLATE ?>/image/GXCOB_logo-icone_1.png">
 	<meta name="robots" content="index, follow">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<meta name="theme-color" content="<?php echo get_css_config()['--primarycolor'] ?>">
@@ -16,14 +22,19 @@
 </head>
 <body>
 <div class="body-wrapper">
-<?php global $info; ?>
-<script>var info = <?php echo json_encode($info); ?>;</script>
+<?php 
+    global $info;
+?>
+<script>
+    var info = <?php echo json_encode($info); ?>;
+    var template_url = <?php echo json_encode(WP_TEMPLATE); ?>;
+</script>
 <?php if (is_home()): ?>
 	<h1 style="display: none !important;">
 		<?php echo WP_NAME; ?>
 	</h1>
 <?php endif ?>
-<header>
+<!-- <header>
 	<div class="top">
 		<div class="container">
 			<div class="midias">
@@ -96,4 +107,49 @@
 		</div>
 	</div>
 	<?php get_template_part('templates/content-menu-lateral'); ?>
+</header> -->
+<header class="header">
+    <div class="navbar-area">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg">
+                        <a class="navbar-brand" href="<?php echo WP_URL ?>/">
+                            <img src="<?php echo WP_TEMPLATE ?>/image/GXCOB_logo_2.png" alt="Logo">
+                        </a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                            <span class="toggler-icon"></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
+                            <ul id="nav" class="navbar-nav ml-auto">
+                                <li class="nav-item">
+                                    <a class="page-scroll active" href="<?php echo WP_URL ?>/">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#features">Ferramentas</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#process">Processos</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#team">Time</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="page-scroll" href="#blog">Blog</a>
+                                </li>
+                                <!-- <li class="nav-item">
+                                    <a class="page-scroll" href="#subscribe">Subscribe</a>
+                                </li> -->
+                            </ul>
+                        </div> <!-- navbar collapse -->
+                    </nav> <!-- navbar -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </div> <!-- navbar area -->
 </header>
