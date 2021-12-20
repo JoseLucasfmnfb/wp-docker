@@ -1,7 +1,64 @@
 <?php wp_footer(); ?>
 <?php global $info; ?>
-<footer>
-	<div class="container">
+<footer class="footer pt-150 gray-bg">
+    <img src="<?php echo WP_TEMPLATE ?>/image/GXCOB_logo_1.png" alt="" class="footer-bg">
+    <div class="container">
+        <div class="row">
+            <div class="col-xl-12">
+                <div class="footer-links text-center">
+                    <a href="index.html" class="logo">
+                        <img class="img-responsive" src="<?php echo WP_TEMPLATE ?>/image/GXCOB_logo_1.png" alt="">
+                    </a>
+                    <div class="footer-social-links">
+                        <ul>
+                            <?php if ($info['facebook']):?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $info['facebook']; ?>">
+                                        <i class="lni lni-facebook-filled"></i>
+                                    </a>
+                                </li>
+                            <?php endif ?>
+                            <?php if ($info['twitter']):?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $info['twitter']; ?>">
+                                        <i class="lni lni-twitter-filled"></i>
+                                    </a>
+                                </li>
+                            <?php endif ?>
+                            <?php if ($info['linkedin']):?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $info['linkedin']; ?>">
+                                        <i class="lni lni-linkedin-original"></i>
+                                    </a>
+                                </li>
+                            <?php endif ?>
+                            <?php if ($info['instagram']):?>
+                                <li>
+                                    <a target="_blank" href="<?php echo $info['instagram']; ?>">
+                                        <i class="lni lni-instagram-original"></i>
+                                    </a>
+                                </li>
+                            <?php endif ?>
+                        </ul>
+                    </div>
+                    <nav class="footer-menu">
+                        <ul>
+                            <li><a href="#home">Home</a></li>
+                            <li><a href="#features">Ferramentas</a></li>
+                            <li><a href="#process">Processos</a></li>
+                            <li><a href="#team">Time</a></li>
+                            <li><a href="#blog">Blog</a></li>
+                            <li><a href="<?php echo WP_URL ?>/contato">Contato</a></li>
+                        </ul>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        <div class="copyright-area text-center">
+            <!-- <p class="mb-0">Designed and Developed by <a href="https://uideck.com" rel="nofollow" target="_blank">UIdeck</a></p> -->
+        </div>
+    </div>
+	<!-- <div class="container">
 		<div class="row itens-footer">
 			<div class="col-sm-3">
 				<h5>Navegação</h5>
@@ -113,8 +170,11 @@
 				</p>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </footer>
+<a href="#" class="scroll-top">
+    <i class="lni lni-chevron-up"></i>
+</a>
 <div class="script">
 	<!-- <script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>

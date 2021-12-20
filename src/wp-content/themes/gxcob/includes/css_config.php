@@ -2,8 +2,8 @@
 
 	function get_css_config(){
 		$values = [];
-		$values['--primarycolor'] = '#ff7707';
-		$values['--secondarycolor'] = '#8c8c8c';
+		$values['--primarycolor'] = '#52CCA7';
+		$values['--secondarycolor'] = '#20232B';
 		$values['--overlaycolor'] = '#00000088';
 		$values['--requiredcolor'] = '#f73434';
 		$values['--primaryfontcolor'] = '#333';

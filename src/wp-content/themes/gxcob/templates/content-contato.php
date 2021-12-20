@@ -1,5 +1,5 @@
 <?php global $info; ?>
-<section id="contato">	
+<section id="contato"  style="background-image: url(<?php echo WP_TEMPLATE ?>/assets/img/hero/hero-bg.svg)">	
 	<article>
 		<div class="container">
 			<h2 class="text-center">Contato</h2>

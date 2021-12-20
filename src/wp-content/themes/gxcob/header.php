@@ -108,12 +108,28 @@
 	</div>
 	<?php get_template_part('templates/content-menu-lateral'); ?>
 </header> -->
+<div class="preloader">
+    <div class="loader">
+        <div class="ytp-spinner">
+            <div class="ytp-spinner-container">
+                <div class="ytp-spinner-rotator">
+                    <div class="ytp-spinner-left">
+                        <div class="ytp-spinner-circle"></div>
+                    </div>
+                    <div class="ytp-spinner-right">
+                        <div class="ytp-spinner-circle"></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <header class="header">
     <div class="navbar-area">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
-                    <nav class="navbar navbar-expand-lg">
+                    <nav class="navbar navbar-expand-lg <?php echo is_home() ? '' : 'not-home'; ?>">
                         <a class="navbar-brand" href="<?php echo WP_URL ?>/">
                             <img src="<?php echo WP_TEMPLATE ?>/image/GXCOB_logo_2.png" alt="Logo">
                         </a>
@@ -141,6 +157,11 @@
                                 </li>
                                 <li class="nav-item">
                                     <a class="page-scroll" href="#blog">Blog</a>
+                                </li>
+                                <li>
+                                    <a href="<?php echo WP_URL ?>/contato">
+                                        Contato
+                                    </a>
                                 </li>
                                 <!-- <li class="nav-item">
                                     <a class="page-scroll" href="#subscribe">Subscribe</a>

@@ -50,33 +50,44 @@ select{
 	}
 }
 .primary-button{
-	border: 1px solid $primarycolor;
-	background-color: transparent;
-	color: $primarycolor;
-	transition: all ease .3s;
-	display: inline-flex;
-	width: auto;
-	font-size: 16px;
-	text-transform: uppercase;
-	padding: 10px 20px;
+    display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 17px 44px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #313450;
+    cursor: pointer;
+    z-index: 5;
+    transition: all .4s ease-in-out;
+    border: none;
+    background: #fff;
 	&:hover{
-		background-color: $primarycolor;
+		background-color: #52cca7;
 		color: $secondaryfontcolor;
 	}
 }
 .secondary-button{
-	border: 1px solid $primarycolor;
-	background-color: transparent;
-	border-radius: 40px;
-	color: $primarycolor;
-	transition: all ease .3s;
-	display: inline-flex;
-	width: auto;
-	font-size: 16px;
-	text-transform: uppercase;
-	padding: 10px 20px;
+	display: inline-block;
+    font-weight: 600;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: middle;
+    user-select: none;
+    padding: 17px 44px;
+    font-size: 20px;
+    border-radius: 50px;
+    color: #fff;
+    cursor: pointer;
+    z-index: 5;
+    transition: all .4s ease-in-out;
+    border: none;
+    background: #52cca7;
 	&:hover{
-		background-color: $primarycolor;
+		background-color: #313450;
 		color: $secondaryfontcolor;
 	}
 }
@@ -294,4 +305,68 @@ select{
 	@media(max-width: $sm){
 		display: block;
 	}
+}
+
+.scroll-top{
+    background: #48cea6!important;
+}
+
+.preloader{
+    .loader{
+        .ytp-spinner-circle{
+            border-color: #48cea6 #48cea6 #ddd;
+        }
+    }
+}
+
+.gradient-1{
+    background-image: linear-gradient(#387466 0%, #49ad90 100%)!important;
+}
+
+.counterup-section{
+    .counter-wrapper{
+        &:after,
+        &:before{
+            background: linear-gradient(#2c4e4b 0%, #59ceaa 100%)!important;
+        }
+    }
+}
+
+.subscribe-section{
+    .subscribe-wrapper{
+        background-image: linear-gradient(#387466 0%, #49ad90 100%)!important;
+    }
+}
+
+.video-section{
+    .video-wrapper{
+        .video-thumb{
+            .video-btn{                
+                &:after{
+                    background-image: linear-gradient(#387466 0%, #49ad90 100%)!important;
+                }
+            }
+        }
+    }
+}
+
+.section-title{
+    span{
+        color: #49ad90!important;
+    }
+}
+
+.navbar-area{
+    .navbar{
+        &.not-home{
+            background-color: $secondarycolor;
+        }
+    }
+    &.sticky{
+        .navbar{
+            &.not-home{
+                background-color: #fff;
+            }
+        }
+    }
 }

@@ -1,8 +1,37 @@
 footer{
-    position: relative;
-    background-color: #252525;
-    padding: 50px 0 0;
-    color: #fff;
+    &.footer{
+        .footer-links{
+            .logo{
+                max-width: 275px;
+            }
+        }
+        .footer-social-links{
+            ul{
+                li{
+                    a{
+                        &:hover{
+                            background: #48ab8e!important;
+                        }
+                    }
+                }
+            }
+        }
+        .footer-menu{
+            ul{
+                li{
+                    a{
+                        &:hover{
+                            color: #52cca7!important;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    /* position: relative;
+    // background-color: #252525;
+    // padding: 50px 0 0;
+    // color: #fff;
     ul{
     	padding: 0;
     	margin: 0;
@@ -57,5 +86,5 @@ footer{
                 }
     	    }
         }
-    }
+    } */
 }
