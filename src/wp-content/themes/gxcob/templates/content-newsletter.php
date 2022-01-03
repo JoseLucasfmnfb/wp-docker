@@ -18,12 +18,16 @@
                     </div>
                 </div>
                 <div class="col-xl-8 col-lg-10 mx-auto">
-                    <form id="newsletter" action="post" class="subscribe-form wow fadeInUp" data-wow-delay=".8s">
-                        <input type="nome" name="nome" id="subs-input" placeholder="Nome">
-                        <input type="email" name="email" id="subs-input" placeholder="Email">
-                        <button type="submit" class="theme-btn">
-                            Inscrever-se
-                        </button>
+                    <form id="newsletter" class="subscribe-form wow fadeInUp row" data-wow-delay=".8s">
+                        <div class="input-wrapper col-lg-5 col-md-5 col-sm-12 col-12">
+                            <input type="text" required="require" name="nome" id="subs-input" placeholder="Nome">
+                        </div>
+                        <div class="input-wrapper col-lg-5 col-md-5 col-sm-12 col-12">
+                            <input type="email" required="require" name="email" id="subs-input" placeholder="Email">
+                        </div>
+                        <div class="input-wrapper col-lg-2 col-md-2 col-sm-12 col-12">
+                            <input type="submit" value="Assinar" class="theme-btn">
+                        </div>
                     </form>
                 </div>
             </div>

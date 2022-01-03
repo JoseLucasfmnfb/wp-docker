@@ -47,7 +47,7 @@
                             <li><a href="#features">Ferramentas</a></li>
                             <li><a href="#process">Processos</a></li>
                             <li><a href="#team">Time</a></li>
-                            <li><a href="#blog">Blog</a></li>
+                            <!-- <li><a href="#blog">Blog</a></li> -->
                             <li><a href="<?php echo WP_URL ?>/contato">Contato</a></li>
                         </ul>
                     </nav>
@@ -176,19 +176,20 @@
     <i class="lni lni-chevron-up"></i>
 </a>
 <div class="script">
-	<!-- <script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/jquery/dist/jquery.min.js"></script>
+	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/jquery/dist/jquery.min.js"></script>
 	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/bootstrap/dist/js/bootstrap.min.js"></script>
 	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/font-awesome/js/fontawesome.min.js"></script>
 	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/lightgallery/dist/js/lightgallery.min.js"></script>
 	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/jquery-mask-plugin/dist/jquery.mask.min.js"></script>
-	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/slick-carousel/slick/slick.min.js"></script> -->
-	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/script.min.js"></script>
+	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/bower_components/slick-carousel/slick/slick.min.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/bootstrap.bundle-5.0.0.alpha-1-min.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/count-up.min.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/glightbox.min.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/tiny-slider.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/wow.min.js"></script>
     <script src="<?php echo WP_TEMPLATE; ?>/assets/js/main.js"></script>
+	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/script.min.js"></script>
+	<script type="text/javascript" src="<?php echo WP_TEMPLATE; ?>/scripts/newsletter.js"></script>
 </div>
 </div>
 </body>

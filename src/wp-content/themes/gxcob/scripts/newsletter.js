@@ -45,7 +45,7 @@ $.fn.assinantes = function() {
 				sendeassinantes(formData).then((data) => {
 					let resposta = JSON.parse( data );
 					console.log(data);
-					this.append('<p class="mensagem '+ resposta.codigo +'">'+ resposta.mensagem +'</p>');
+					this.append('<div class="col-12"><p class="mensagem '+ resposta.codigo +'">'+ resposta.mensagem +'</p></div>');
 					if( resposta.codigo == "sucesso" ){
 						$.each(dados, (key, value) => {	
 							if($(value).attr('type') != 'submit' && $(value).attr('type') != 'hidden'){
@@ -67,5 +67,8 @@ $.fn.assinantes = function() {
 }
 
 $(document).ready(function() {
+    $(document).on('click', '#verInfo', function () {
+        console.log('ESTOYAQUI ->>')
+	});
 	$('#newsletter').assinantes();
 });

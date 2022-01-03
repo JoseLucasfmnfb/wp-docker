@@ -144,22 +144,22 @@
                         <div class="collapse navbar-collapse sub-menu-bar" id="navbarSupportedContent">
                             <ul id="nav" class="navbar-nav ml-auto">
                                 <li class="nav-item">
-                                    <a class="page-scroll active" href="<?php echo WP_URL ?>/">Home</a>
+                                    <a class="page-scroll active" data-link-ref="#home" href="<?php echo WP_URL ?>/">Home</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="#features">Ferramentas</a>
+                                    <a class="page-scroll" data-link-ref="#features" href="#features">Ferramentas</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="#process">Processos</a>
+                                    <a class="page-scroll" data-link-ref="#process" href="#process">Processos</a>
                                 </li>
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="#team">Time</a>
+                                    <a class="page-scroll" data-link-ref="#team" href="#team">Time</a>
                                 </li>
+                                <!-- <li class="nav-item">
+                                    <a class="page-scroll" data-link-ref="#blog" href="#blog">Blog</a>
+                                </li> -->
                                 <li class="nav-item">
-                                    <a class="page-scroll" href="#blog">Blog</a>
-                                </li>
-                                <li>
-                                    <a href="<?php echo WP_URL ?>/contato">
+                                    <a class="page-scroll" data-link-ref="#contato" href="<?php echo WP_URL ?>/contato">
                                         Contato
                                     </a>
                                 </li>

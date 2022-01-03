@@ -150,6 +150,40 @@ section{
             }
         }
     }
+    &#subscribe{
+        form{
+            &#newsletter{
+                .input-wrapper{
+                    padding: 0 10px;
+                    input{
+                        width: 100%;
+                    }
+                }
+                .theme-btn{
+                    display: inline-block;
+                    font-weight: 600;
+                    text-align: center;
+                    white-space: nowrap;
+                    vertical-align: middle;
+                    user-select: none;
+                    //padding: 17px 44px;
+                    font-size: 20px;
+                    border-radius: 50px;
+                    color: #313450;
+                    cursor: pointer;
+                    z-index: 5;
+                    transition: all .4s ease-in-out;
+                    border: none;
+                    background: #fff;
+                    padding: 0;
+                    &:hover{
+                        color: #fff;
+                        background-color: #52cca7;
+                    }
+                }
+            }
+        }
+    }
 }
 #mapa{
 	height: 400px;

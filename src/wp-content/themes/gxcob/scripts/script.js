@@ -8,4 +8,7 @@ $(document).ready(function() {
 			}, 1000);
 		}
 	});
+    /* $(document).on('click', '#verInfo', function(){
+        console.log('DEUCERTOESSAMERDADECLICK ->>');
+    }); */
 });

@@ -45,7 +45,8 @@ function onScroll(event) {
 
 	for (var i = 0; i < sections.length; i++) {
 		var currLink = sections[i];
-		var val = currLink.getAttribute('href');
+		//var val = currLink.getAttribute('href');
+		var val = currLink.getAttribute('data-link-ref');
 		var refElement = document.querySelector(val);
 		var scrollTopMinus = scrollPos + 73;
 		if (refElement.offsetTop <= scrollTopMinus && (refElement.offsetTop + refElement.offsetHeight > scrollTopMinus)) {

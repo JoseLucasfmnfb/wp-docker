@@ -9,8 +9,8 @@
 	get_template_part('templates/content-contador');
 	get_template_part('templates/content-team');
 	//get_template_part('templates/content-depoimentos');
-	get_template_part('templates/content-blog');
-	get_template_part('templates/content-video');
+	//get_template_part('templates/content-blog');
+	//get_template_part('templates/content-video');
 	get_template_part('templates/content-newsletter');
 	//get_template_part('templates/content-contato');
 	//get_template_part('templates/content-mapa');
